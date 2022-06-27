@@ -10,5 +10,9 @@ public class MainApp {
         int stop = 11;
         NumberUtilities a= new NumberUtilities();
         System.out.println(a.getRange(stop));
+
+        int start = 5;
+        System.out.println(a.getRange(start,stop));
+
     }
 }

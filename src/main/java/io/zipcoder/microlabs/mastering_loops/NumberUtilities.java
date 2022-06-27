@@ -30,7 +30,14 @@ public class NumberUtilities {
     }
 
     public static String getRange(int start, int stop) {
-        return null;
+        int i = start;
+        String result= "";
+        for(i = start; i <= stop-1; i++){
+
+
+            result = result+Integer.toString(i);
+        }
+        return result;
     }
 
 
