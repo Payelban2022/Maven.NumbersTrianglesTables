@@ -7,5 +7,8 @@ import java.util.Scanner;
  */
 public class MainApp {
     public static void main(String[] args) {
+        int stop = 11;
+        NumberUtilities a= new NumberUtilities();
+        System.out.println(a.getRange(stop));
     }
 }
