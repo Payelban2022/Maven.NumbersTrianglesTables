@@ -7,12 +7,16 @@ import java.util.Scanner;
  */
 public class MainApp {
     public static void main(String[] args) {
-        int stop = 11;
+        int stop = 20;
         NumberUtilities a= new NumberUtilities();
         System.out.println(a.getRange(stop));
 
         int start = 5;
         System.out.println(a.getRange(start,stop));
+
+        int step = 5;
+        System.out.println(a.getRange(start,stop,step));
+
 
     }
 }
