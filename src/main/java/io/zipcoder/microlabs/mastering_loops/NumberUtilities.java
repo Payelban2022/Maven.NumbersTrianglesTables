@@ -28,16 +28,14 @@ public class NumberUtilities {
     }
 
 
-//    public static String getSquareNumbers(int start, int stop, int step) {
-//        int i = 0;
-//
-//
-//
-//        String result = "";
-//        for (i= start; i <= stop-1;i = i+step)
-//        {result = result + Integer.toString((i) Math.pow(i, 2));}
-//        return result;
-//    }
+    public static String getSquareNumbers(int start, int stop, int step) {
+        int i = 0;
+        String result = "";
+        for (i= start; i <= stop-1;i = i+step) {
+            result = result + Integer.toString((int) Math.pow(i, 2));
+        }
+        return result;
+    }
 
     public static String getRange(int stop) {
         int i = 0;
