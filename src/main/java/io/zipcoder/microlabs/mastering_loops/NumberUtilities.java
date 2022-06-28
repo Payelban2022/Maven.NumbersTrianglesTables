@@ -70,13 +70,19 @@ public class NumberUtilities {
         return result;
     }
 
+    public static String getExponentiations(int start,int stop,int step,int exponents) {
+        int i = 0;
+        int j = exponents;
+        String result = "";
+        for(i = start; i <= stop; i = i+step) {
+            double pow = Math.pow(i, j);
+            result = result + Integer.toString((int) pow);
 
-//    public static String getExponentiations(int start, int stop, int step, int exponent) {
-//        int i = exponent;
-//        String result = "";
-//        for (i = start;i <= stop-1;i= i + step){
-//            result = result + Integer.toString(j) ;Math.pow(i,exponent);
-//        }
-//        return result;
-//    }
-}
+        }
+        return result;
+    }
+
+
+  };
+
+

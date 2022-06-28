@@ -19,9 +19,11 @@ public class MainApp {
 
         System.out.println(a.getEvenNumbers(start,stop));
         System.out.println(a.getOddNumbers(start,stop));
-//        System.out.println(a.getSquareNumbers(start,stop,step));
-//        int exponent = 3;
-//        System.out.println(a.getExponentiations(start,stop,step,exponent));
+        System.out.println(a.getSquareNumbers(start,stop,step));
+
+        int exponents= 5;
+        System.out.println(a.getExponentiations(start,stop,step,exponents));
+
 
 
 
