@@ -5,14 +5,13 @@ package io.zipcoder.microlabs.mastering_loops;
 public class NumberUtilities {
     public static String getEvenNumbers(int start, int stop) {
         int i = 0;
-        String result = "";
-        for (i = start; i <= stop - 1; i=i++) {
+       String result = "";
+
+        for (i = start; i <= stop - 1;  i++) {
             if (i % 2 == 0) {
                 result = result + Integer.toString(i);
             }
-
         }
-
         return result;
     }
 
@@ -29,18 +28,16 @@ public class NumberUtilities {
     }
 
 
-    public static String getSquareNumbers(int start, int stop, int step) {
-        int i = 0;
-
-
-        String result = "";
-        for (i= start; i <= stop-1;i = i+step){
-
-            result = result+Integer.toString((int) Math.pow(i,2));
-
-        }
-        return result;
-    }
+//    public static String getSquareNumbers(int start, int stop, int step) {
+//        int i = 0;
+//
+//
+//
+//        String result = "";
+//        for (i= start; i <= stop-1;i = i+step)
+//        {result = result + Integer.toString((i) Math.pow(i, 2));}
+//        return result;
+//    }
 
     public static String getRange(int stop) {
         int i = 0;
@@ -76,12 +73,12 @@ public class NumberUtilities {
     }
 
 
-    public static String getExponentiations(int start, int stop, int step, int exponent) {
-        int i = exponent;
-        String result = "";
-        for (i = start;i <= stop-1;i= i + step){
-            result = result + Integer.toString(double) Math.pow(i,exponent);
-        }
-        return result;
-    }
+//    public static String getExponentiations(int start, int stop, int step, int exponent) {
+//        int i = exponent;
+//        String result = "";
+//        for (i = start;i <= stop-1;i= i + step){
+//            result = result + Integer.toString(j) ;Math.pow(i,exponent);
+//        }
+//        return result;
+//    }
 }
