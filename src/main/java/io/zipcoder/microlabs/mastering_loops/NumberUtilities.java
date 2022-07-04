@@ -8,7 +8,7 @@ public class NumberUtilities {
        String result = "";
 
         for (i = start; i <= stop - 1;  i++) {
-            if (i % 2 == 0) {
+            if (i % 2 != 0) {
                 result = result + Integer.toString(i);
             }
         }
@@ -20,7 +20,7 @@ public class NumberUtilities {
         int i = 0;
         String result = "";
         for (i= start; i <= stop-1;i++) {
-            if (i % 2 != 0) {
+            if (i % 2 == 0) {
                 result = result + Integer.toString(i);
             }
         }
@@ -74,7 +74,7 @@ public class NumberUtilities {
         int i = 0;
         int j = exponents;
         String result = "";
-        for(i = start; i <= stop; i = i+step) {
+        for(i = start; i <stop; i = i+step) {
             double pow = Math.pow(i, j);
             result = result + Integer.toString((int) pow);
 
